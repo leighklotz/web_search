@@ -25,10 +25,6 @@ Ko-Fi for the original extension author! Send him some love.
 
  Type ```search "the weather in Amsterdam" and tell me what should I wear.```
 
- Requirements
-
- - Google chrome browser
-
  How to install
 
 *** Make sure to run these commands in the cmd script that came with text-generation-webui. eg ```cmd_linux.sh```(Linux) ***
