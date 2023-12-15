@@ -4,7 +4,6 @@ Ko-Fi for the original extension author! Send him some love.
 
 # web_search [WIP] -- DuckDuckGo Version
  Web search extension for [text-generation-webui](https://github.com/oobabooga/text-generation-webui). Modified to automatically be enabled, use DuckDuckGo as the search provider, and not override the current context.
->>>>>>> 029ad07 (Change readme to note DuckDuckGo version)
 
  Thanks to [TheCyberViking](https://github.com/TheCyberViking) for the initial simple web search code. You can see it [here](https://github.com/oobabooga/text-generation-webui/discussions/932)
 
