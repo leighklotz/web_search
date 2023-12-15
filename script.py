@@ -2,6 +2,7 @@ import gradio as gr
 import modules.shared as shared
 from duckduckgo_search import DDGS
 
+import re
 import urllib
 import html2text
 
