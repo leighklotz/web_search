@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-No longer maintained.
-
-# web_search
- Web search extension for [text-generation-webui](https://github.com/oobabooga/text-generation-webui)
-=======
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z3OS8CM)
 
 Ko-Fi for the original extension author! Send him some love.
@@ -18,13 +12,8 @@ Ko-Fi for the original extension author! Send him some love.
  |:---:|:---:|
 | ![Screenshot from 2023-09-02 16-45-22](https://github.com/simbake/web_search/assets/6049383/36c52e5a-4146-444e-b254-ed7c48a0e946) |![Screenshot from 2023-09-02 16-43-01](https://github.com/simbake/web_search/assets/6049383/d09fa1f0-a1b1-4f45-adb3-9c9b1c517246) |
 
-<<<<<<< HEAD
 
- This extension enables' a language model to receive google search data according to the users' input.[Currently supports google search only]
-=======
- 
  This extension enables' a language model to receive DuckDuckGo search data according to the users' input.[Currently supports DuckDuckGo search only]
->>>>>>> 029ad07 (Change readme to note DuckDuckGo version)
 
 
  How to use

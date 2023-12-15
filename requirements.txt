@@ -1,9 +1,2 @@
-<<<<<<< HEAD
-selenium==4.13.0
-webdriver-manager
-googlesearch-python
-fake-useragent
-html2text
-=======
 duckduckgo_search==3.9.4
->>>>>>> fcdf938 (Change to have DuckDuckGo API instead of selenium)
+
