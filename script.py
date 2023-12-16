@@ -34,7 +34,6 @@ def input_modifier(user_input, state):
             query = user_input.replace("search", "").strip()
             state["context"] = state["context"] + "Relevant search results are in the DuckDuckGo search results. Use this info in the response."
             search_data = search_results(query)
-            import pdb;pdb.set_trace()
             user_prompt = f"User question: {user_input}\nDuckDuckGo search results:\n{search_data}"
             return str(user_prompt)               
     shared.processing_message = "*Typing...*"
