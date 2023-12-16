@@ -1,2 +1,2 @@
-duckduckgo_search==3.9.4
+duckduckgo_search==4.1.0
 
