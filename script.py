@@ -9,10 +9,9 @@ search_access = True
 def search_results(query):
     html = ""
     with DDGS() as ddgs:
-        for r in ddgs.text(query, safesearch='off', timelimit='y', max_results=10):
-            html = html + str(r) + "\n"
+        for r in ddgs.text(query, safesearch='off', timelimit='y', max_results=10, backend='api'):
+            html += f"- {r['title']} -- {r['body']} -- {(r['href'])}\n"
     return html
-
 
 def ui():
     global search_access
@@ -35,7 +34,8 @@ def input_modifier(user_input, state):
             query = user_input.replace("search", "").strip()
             state["context"] = state["context"] + "Relevant search results are in the DuckDuckGo search results. Use this info in the response."
             search_data = search_results(query)
-            user_prompt = f"User question: {user_input}\nDuckDuckGo search results: {search_data}"
+            import pdb;pdb.set_trace()
+            user_prompt = f"User question: {user_input}\nDuckDuckGo search results:\n{search_data}"
             return str(user_prompt)               
     shared.processing_message = "*Typing...*"
     return user_input
