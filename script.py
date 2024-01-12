@@ -7,11 +7,11 @@ import urllib
 search_access = True
 
 def search_results(query):
-    html = ""
+    result = ""
     with DDGS() as ddgs:
-        for r in ddgs.text(query, safesearch='off', timelimit='y', max_results=10, backend='api'):
-            html += f"- {r['title']} -- {r['body']} -- {(r['href'])}\n"
-    return html
+        for r in ddgs.text(query, safesearch='off', timelimit='y', max_results=10, backend='lite'):
+            result += f"- {r['title']} -- {r['body']} -- {(r['href'])}\n"
+    return result
 
 def ui():
     global search_access
@@ -29,9 +29,11 @@ def update_search_access(checkbox_value):
 def input_modifier(user_input, state):
     global search_access
     if search_access:
-        if user_input.lower().startswith("search"):
-            shared.processing_message = "*Searching online...*"
-            query = user_input.replace("search", "").strip()
+        if user_input.lower().startswith("!search"):
+            print("{search_access=}")
+            shared.processing_message = "*Searching Duck Duck Go online...*"
+            print(shared.processing_message)
+            query = user_input.replace("!search", "").strip()
             state["context"] = state["context"] + "Relevant search results are in the DuckDuckGo search results. Use this info in the response."
             search_data = search_results(query)
             user_prompt = f"User question: {user_input}\nDuckDuckGo search results:\n{search_data}"
